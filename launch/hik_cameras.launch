@@ -1,0 +1,8 @@
+<launch>
+  <node pkg="nodelet" type="nodelet" name="manager_nodelet"  args="manager" output="screen" required="false"/>
+  <node pkg="nodelet" type="nodelet" name="hikvision_camera_nodelet"
+        args="load vision_sensor_ns/hikvision_camera_nodelet  manager_nodelet"  respawn="true" >  
+  </node>
+</launch>
+
+<!-- load  class name    manager name -->

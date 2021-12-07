@@ -1,0 +1,13 @@
+camera_config:
+     config:
+        camera_num: 3
+        #camera_num: 2 
+        #camera_num: 1     
+        debug: false
+        camera_sn: ["00F93552828" , "00F93552866" , "00F93552823"]
+        #cam era_sn: ["00E52639254" , "00E87019486"]
+        #camera_sn: [ "00F93552823"]
+        camera_topic_name: ["/camera0/image_raw" ,"/camera1/image_raw" ,"/camera2/image_raw"]
+        camera_control_topic_name: "/camera_control"
+        camera_control_value: 7
+        FPS: 5.0         
